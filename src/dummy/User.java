@@ -5,11 +5,11 @@ import java.util.UUID;
 public class User {
     private String name;
     private UUID id = UUID.randomUUID();
-    private int salary;
+    private int annualSalary;
     private UserRole role;
 
     public User() {
-        this.salary = 2500;
+        this.annualSalary = 0;
     }
 
     public void setName(String name) {
@@ -20,8 +20,8 @@ public class User {
         return this.id;
     }
 
-    public void setSalary(int startValue) {
-        this.salary = startValue;
+    public void setAnnualSalary(int annualSalary) {
+        this.annualSalary = annualSalary;
     }
 
     public UserRole getRole() {

@@ -6,6 +6,10 @@ package semantik;
  * handeln von User-Objekten.
  */
 
+/**
+ * Bad Example
+ */
+
 import dummy.Guest;
 import dummy.User;
 import dummy.UserRole;
@@ -51,13 +55,13 @@ public class Service {
     public void setSalary(User user) {
         this.counter++;
         if (user.getRole() == UserRole.STUDENT) {
-            user.setSalary(12000);
+            user.setAnnualSalary(12000);
         } else if (user.getRole() == UserRole.JUNIOR) {
-            user.setSalary(40000);
+            user.setAnnualSalary(40000);
         } else if (user.getRole() == UserRole.SENIOR) {
-            user.setSalary(50000);
+            user.setAnnualSalary(50000);
         } else if (user.getRole() == UserRole.ARCHITECT) {
-            user.setSalary(80000);
+            user.setAnnualSalary(80000);
         }
     }
 
